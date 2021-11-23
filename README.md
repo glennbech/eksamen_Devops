@@ -35,6 +35,7 @@ SkalBank har også problmer med sin systemutviklingsprosess for API teamet.
 
 ## Krav til leveransen
 
+* Eksamensoppgaven er gitt på GitHub repository ; https://github.com/PGR301-2021/eksamen_2021
 * Du skal IKKE lage en fork av dette repositoryet, men kopiere innholdet til et nytt repository. Årsaken til dette er at sensor vil lage en fork av ditt repo, og arbeidsflyten blir lettere for sensor om har har et frittstående repo.
 * Du kan velge å kode i et privat eller public repo.
 * Du kan jobbe i et privat repo, og deretter gjøre det public noen timer etter innleveringsfrist hvis du er bekymret for plagiat fra medstudenter.
@@ -44,8 +45,9 @@ Når sensor evaluerer oppgaven vil han/hun se på
 * Ditt repository og "Actions" fanen i GutHub for å bekrefte at Workflows faktisk virker
 * AWS miljøet i klassens AWS konto for å bekrefte at oppgaver som beskrevet er utført
 * Vurdere drøftelsesoppgavene. Det anbefales å lage en egen "Readme/Markdown" for disse i ditt repo.
+* Lager en fork av ditt repo og tester ut pipelines med egen AWS bruker/github bruker.
 
-Ved innlevering via WiseFlow, kan dere lage et tekstdokument som kun inneholder link til repository
+Ved innlevering via WiseFlow, kan dere lage et tekstdokument som kun inneholder link til deres repository
 
 ## Evaluering 
 
@@ -136,6 +138,8 @@ NB.
 
 Dersom du løser oppgaven på Linux operativsystem, vil jeg anbefale å bruke "host" basert nettverksmodus for Docker slik at Spring boot applikasjonen, Influx DB og Grafana kan kommunisere fritt på "localhost".
 
+I denne oppgaven vektlegges det at du har klart å bruke Micrometer rammeverket til å identifisere problemområdet til applikasjonen. 
+
 ## Oppgave Terraform
 
 Terraformkoden ligger i _infra_ katalogen i dette repoet.
@@ -163,7 +167,9 @@ Error: Error creating S3 bucket: BucketAlreadyOwnedByYou: Your previous request 
 
 Hvorfor funket terraformkoden i dette repoet for "Jens" første gang det ble kjørt? Og hvorfor feiler det for alle andre etterpå, inkludert Jens etter at han ryddet på disken sin og slettet _terraform.tfstate_ filen?
 
-Slett _infra/bucket.tf_ fra repoet ditt.
+Viktig! 
+
+Slett _infra/bucket.tf_ fra repoet ditt. Du skal ikke ha med denne filen videre i din egen infraoppgave.
 
 ### Lag en S3 bucket i klassens AWS konto
 
