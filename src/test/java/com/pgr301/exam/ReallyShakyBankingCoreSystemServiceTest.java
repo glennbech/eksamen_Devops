@@ -11,6 +11,7 @@ class ReallyShakyBankingCoreSystemServiceTest {
 
     @Test
     void transfer() {
+        ReallyShakyBankingCoreSystemService shaky = new ReallyShakyBankingCoreSystemService();
     }
 
     @Test
@@ -28,6 +29,7 @@ class ReallyShakyBankingCoreSystemServiceTest {
         BigDecimal testBalance = new BigDecimal(1000000);
         test.setBalance(testBalance);
         assertEquals(testBalance, test.getBalance());
+
     }
 
     @Test
