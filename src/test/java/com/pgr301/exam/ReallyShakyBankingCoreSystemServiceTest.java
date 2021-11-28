@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ReallyShakyBankingCoreSystemServiceTest {
 
-    @Test
+    /*@Test
     void transfer() {
         ReallyShakyBankingCoreSystemService shaky = new ReallyShakyBankingCoreSystemService();
     }
@@ -34,5 +34,5 @@ class ReallyShakyBankingCoreSystemServiceTest {
 
     @Test
     void getAccount() {
-    }
+    }*/
 }
