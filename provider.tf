@@ -1,4 +1,4 @@
-/*terraform {
+terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -12,10 +12,11 @@
     }
 }
 
-//provider "aws" {
-//region = "eu-west-1"
-//}*/
-terraform {
+provider "aws" {
+region = "eu-west-1"
+}
+
+/*terraform {
   backend "remote" {
     organization = "hagen"
 
@@ -23,9 +24,7 @@ terraform {
       name = "Devops-Exam"
     }
   }
-}
-
-
+}*/
 
 resource "aws_ecr_repository" "ecr" {
   name                 = "haha029"
