@@ -30,13 +30,3 @@ resource "aws_ecr_repository" "ecr" {
   }
 
 }
-
-/*terraform {
-  backend "remote" {
-    organization = "hagen"
-
-    workspaces {
-      name = "Devops-Exam"
-    }
-  }
-}*/
