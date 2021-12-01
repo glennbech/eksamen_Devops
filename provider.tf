@@ -13,18 +13,9 @@ terraform {
 }
 
 provider "aws" {
-region = "eu-west-1"
+  profile = "default"
+  region = "eu-west-1"
 }
-
-/*terraform {
-  backend "remote" {
-    organization = "hagen"
-
-    workspaces {
-      name = "Devops-Exam"
-    }
-  }
-}*/
 
 resource "aws_ecr_repository" "ecr" {
   name                 = "haha029"
@@ -39,3 +30,13 @@ resource "aws_ecr_repository" "ecr" {
   }
 
 }
+
+/*terraform {
+  backend "remote" {
+    organization = "hagen"
+
+    workspaces {
+      name = "Devops-Exam"
+    }
+  }
+}*/
