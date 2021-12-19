@@ -4,6 +4,7 @@
             <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
         </encoder>
     </appender>
+
     <root level="error">
         <appender-ref ref="STDOUT"/>
     </root>
